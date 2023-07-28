@@ -12,23 +12,14 @@ function main() {
     var diemUT = document.getElementById("uuTien").value;
     var diemKV = document.getElementById("khuVuc").value;
 
-    // console.log(diemMon1,diemMon2,diemMon3,diemDT,diemKV);
 
     tinhDiem3mon(diemToan,diemLy,diemHoa);
-    // console.log(tinhDiem3mon(diemMon1,diemMon2,diemMon3));
+
 
     tinhDiemUt(diemKV,diemUT);
-    // console.log(tinhDiemUt(diemKV,diemDT));
+ 
 
-    //! c1:
-    // var tongDiem = tinhDiem3mon(diemMon1,diemMon2,diemMon3) + tinhDiemUt(diemKV,diemDT);
-    // if (tongDiem >= 25) {
-    //     document.getElementById("txtTinh").innerHTML = tongDiem + "<h1>CHÚC MỪNG EM ĐÃ ĐẬU!</h1>";
-    // } else {
-    //     document.getElementById("txtTinh").innerHTML = tongDiem + "<h1>NGU!</h1>";
-    // }
-
-    //! c2:
+    
     ketQua(tinhDiem3mon(diemToan,diemLy,diemHoa),tinhDiemUt(diemKV,diemUT))
     
 }

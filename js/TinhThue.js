@@ -11,7 +11,7 @@ function tinhThue() {
     var thuNhap = document.getElementById("thueHN").value;
     var soNguoi = document.getElementById("soNguoi").value;
 
-    document.getElementById("txtTinhThue").innerHTML = "Họ và Tên: " + hoTen + "<br> Tổng thu nhập 1 năm: " + thuNhap + "<br> Số người phụ thuộc: " + soNguoi + "<br> tổng thuế cần nộp: " + thue(thuNhap, soNguoi).toLocaleString();
+    document.getElementById("txtTinhThue").innerHTML = "Họ và Tên: " + hoTen + "<br> Tổng thu nhập 1 năm: " + thuNhap.toLocaleString() + "<br> Số người phụ thuộc: " + soNguoi + "<br> tổng thuế cần nộp: " + thue(thuNhap, soNguoi).toLocaleString();
 }
 
 function thue(thuNhap, soNguoi) {
